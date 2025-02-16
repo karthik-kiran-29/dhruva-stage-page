@@ -13,12 +13,6 @@ const HeroPage = () => {
           }}
       />
       
-      {/* Pink/magenta overlay for the smoke effect */}
-      <div className="absolute inset-0 bg-gradient-to-t from-pink-900/70 to-transparent mix-blend-multiply" />
-      
-      {/* Vignette effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70" />
-      
       {/* Content container */}
       <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-tight">
@@ -29,8 +23,6 @@ const HeroPage = () => {
         </p>
       </div>
       
-      {/* Optional: add some particle or light effects */}
-      <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent" />
     </div>
   );
 };
