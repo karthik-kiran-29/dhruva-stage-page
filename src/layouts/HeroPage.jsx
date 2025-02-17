@@ -1,28 +1,35 @@
 import React from "react";
 import heroImage from '../assets/HeroImage.png';
-import heroImage2 from '../assets/OffStageImage.png'
-const HeroPage = ({OnStage,title,tagline}) => {
+import heroImage2 from '../assets/OffStageImage.png';
+
+const HeroPage = ({OnStage, title, tagline}) => {
   return (
-    <div className=" h-screen w-full bg-black overflow-hidden sticky">
-      {/* Background with overlay to create the dark effect with pink/magenta accents */}
+    <div className="h-screen w-full bg-black overflow-hidden sticky">
+      {/* Background with overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center transition-transform duration-1000"
         style={{
-            backgroundImage: `url(${OnStage?heroImage:heroImage2})`,
-            filter: "brightness(0.4) saturate(1.5)"
-          }}
+          backgroundImage: `url(${OnStage ? heroImage : heroImage2})`,
+          filter: "brightness(0.4) saturate(1.5)"
+        }}
+        data-aos="zoom-out"
       />
       
       {/* Content container */}
       <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-tight">
+        <h1 
+          className="text-white text-5xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-tight"
+          data-aos="fade-up"
+        >
           {title}
         </h1>
-        <p className="text-white text-xl md:text-2xl lg:text-3xl font-medium tracking-wide">
+        <p 
+          className="text-white text-xl md:text-2xl lg:text-3xl font-medium tracking-wide"
+          data-aos="fade-up"
+        >
           {tagline}
         </p>
       </div>
-      
     </div>
   );
 };
