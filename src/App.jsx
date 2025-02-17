@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import OffStageEvents from './pages/OffStageEvents'
 import StageEvents from './pages/StageEvents'
 
 function App() {
   
 
   return (
+    <>
     <StageEvents/>
+    <OffStageEvents/>
+    </>
   )
 }
 
