@@ -70,7 +70,7 @@ const EventsDisplay = () => {
         {/* Right Image Section */}
         <div 
           className="w-full md:w-1/2 mt-8 md:mt-0"
-          data-aos="fade-left"
+          data-aos="fade-up"
         >
           <img
             src={EventBanner}
