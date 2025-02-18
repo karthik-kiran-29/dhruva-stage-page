@@ -4,6 +4,7 @@ import OffStageEvents from './pages/OffStageEvents';
 import StageEvents from './pages/StageEvents';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import  DragCards  from './components/DragCards';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <>
     <StageEvents/>
     <OffStageEvents/>
+    <DragCards/>
     </>
   )
 }
